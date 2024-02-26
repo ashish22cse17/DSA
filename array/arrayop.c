@@ -35,7 +35,7 @@ void delete(){
     printf("\nenter the position : ");
     scanf("%d",&pos);
     if(pos-1<=size){
-        for (int i = size-1; i >=pos-1; i--)
+        for (int i =pos-1 ; i<size-1; i++)
         {
             arr[i]=arr[i+1];
         }
