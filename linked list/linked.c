@@ -1,5 +1,6 @@
 #include<stdio.h>
 struct node{
+    struct node * previous;
     int data;
     struct node * next;
 };
