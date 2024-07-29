@@ -19,7 +19,7 @@ struct Node * deleteValue(struct Node * head , int value){
         p=p->next;
         q=q->next;
     }   
-    if(q->data==value||p->next->data==value){
+    if(q->data==value||head->data==value){
       printf("true");
     }
     else
