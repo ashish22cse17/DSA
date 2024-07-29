@@ -1,0 +1,11 @@
+problem in dsa :
+->1.adt (abstract data type)
+->malloc and pointer (in cpp) as well in c
+->lec 20 code completion bye....13:58
+->
+->
+->
+->
+->
+->
+->
