@@ -5,14 +5,7 @@ struct Node{
     int data;
     struct Node * next;
 };
-void traversal(struct Node* head){
-    struct Node * ptr = head;
-    do{
-        printf("%d\t",ptr->data);
-        ptr = ptr->next;
-    }while(ptr!=head);
-    printf("\n");
-}
+// other adt to done later
 int main(){
     struct Node * head;
     struct Node * second;

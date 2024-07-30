@@ -18,7 +18,13 @@ struct Node * insertAtFisrt(struct Node * head , int data){
     struct Node * ptr = (struct Node *)malloc(sizeof(struct Node));
     ptr->data=data;
     struct Node * p = head->next;
-    return ptr;
+    while(p->next!=head){
+        p= p->next;
+    }
+    p->next=ptr;
+    ptr->next= head;
+    head=ptr;
+    return head;
 }
 int main(){
     struct Node * head;
@@ -34,6 +40,8 @@ int main(){
     second->next=third;
     third->data=42;
     third->next=head;
+    traversal(head);
+    head=insertAtFisrt(head,45);
     traversal(head);
     return 0;
 }
